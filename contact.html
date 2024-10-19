@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant KEA | Contact</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
-    <header>
+<body class="contact-page">
+    <header class="header">
         <h1>Restaurant KEA</h1>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./food-menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="active-link" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <address>
-                <p>Guldbergsgade 29N 2200 Copenhagen</p>
-                <p>Phone no.: <a href="tel:+4520825370">20 82 53 70</a></p>
-                <p>E-mail: <a href="mailto:info@restaurantkea.dk">restaurantkea.dk</a></p>
+                <p>Guldbergsgade 29N</p>
+                <p>2200 Copenhagen</p>
+                <p class="phone">Phone no.: <a href="tel:+4520825370">20 82 53 70</a></p>
+                <p class="e-mail">E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
             </address>
-            <img src="./images/map.jpg" alt="Map over KEA">
-        </section>
-        <section>
             <form action="">
                 <fieldset>
                     <legend>Contact form</legend>
@@ -53,9 +52,14 @@
                         <label for="info">Further information</label>
                         <textarea name="info" id="info"></textarea>
                     </div>
-                    <input type="submit" value="Send">
+                    <input class="button" type="submit" value="Send">
                 </fieldset>
             </form>
+        </section>
+        <section>
+            <div class="image-zoom-container">
+                <img src="./images/map.jpg" alt="Map over KEA">
+            </div>
         </section>
     </main>
     <footer>
